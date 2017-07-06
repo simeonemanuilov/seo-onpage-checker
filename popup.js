@@ -2,17 +2,21 @@ var tab_title = '';
 
 function display_canonical(results) {
     canonical = results;
-    document.querySelector("#meta-title").innerHTML = "<p class='info'><span class='info-heading'>Мета Заглавие: </span>" + tab_title + "</p><p class='info'><span class='info-heading'>Каноничен: </span>" + canonical + "</p>";
+    meta_title_text = chrome.i18n.getMessage("metaTitle");
+    canonical_text = chrome.i18n.getMessage("canonical");
+    document.querySelector("#meta-title").innerHTML = "<p class='info'><span class='info-heading'>" + meta_title_text + ": </span>" + tab_title + "</p><p class='info'><span class='info-heading'>" + canonical_text + ": </span>" + canonical + "</p>";
 }
 
 function display_h1(results) {
     h1 = results;
-    document.querySelector("#h1").innerHTML = "<p class='info'><span class='info-heading'>H1 заглавие: </span>" + h1 + "</p>";
+    h1_text = chrome.i18n.getMessage("h1Text");
+    document.querySelector("#h1").innerHTML = "<p class='info'><span class='info-heading'>" + h1_text + ": </span>" + h1 + "</p>";
 }
 
 function display_netpeak_cloud(results) {
     netpeak_cloud = results;
-    document.querySelector("#netpeak-cloud").innerHTML = "<p class='info'><span class='info-heading'>ID: </span>" + netpeak_cloud + "</p>";
+    netpeak_cloud_id_text = chrome.i18n.getMessage("netpeakCloudIdText");
+    document.querySelector("#netpeak-cloud").innerHTML = "<p class='info'><span class='info-heading'>" + netpeak_cloud_id_text + ": </span>" + netpeak_cloud + "</p>";
 }
 
 function http_headers(results) {
@@ -26,7 +30,7 @@ function http_headers(results) {
 }
 
 function robots_links(results) {
-    var link = results;
+    //var link = results;
     //document.querySelector("#robots").href=link+"/robots.txt";
     //document.querySelector("#robots").setAttribute('target', '_blank')
 }
@@ -34,7 +38,8 @@ function robots_links(results) {
 function display_index_noindex(results) {
     index_noindex = results;
     var index_noindex_result = document.querySelector("#index-noindex");
-    index_noindex_result.innerHTML = "<p class='info'><span class='info-heading'>Мета index/noindex: </span>" + index_noindex + "</p>";
+    index_noindex_text = chrome.i18n.getMessage("indexNoindex");
+    index_noindex_result.innerHTML = "<p class='info'><span class='info-heading'>" + index_noindex_text + ": </span>" + index_noindex + "</p>";
     if (index_noindex[0].indexOf("noindex") !== -1) {
         index_noindex_result.className += "noindex";
     }
@@ -42,19 +47,27 @@ function display_index_noindex(results) {
 
 function display_long_meta_error(results) {
     meta_title_long = results;
-    if (meta_title_long.length > 10) {
-        document.querySelector("#recommendations-panel-2").innerHTML += "<p class='warning'>" + "Внимание! Прекалено дълъг Meta Title. Текуща дължина: " + meta_title_long.length + " символа.</p>";
+    meta_title_long_text_start = chrome.i18n.getMessage("metaTitleErrorStart");
+    meta_title_long_text_end = chrome.i18n.getMessage("metaTitleErrorEnd");
+    if (meta_title_long.length > 65) {
+        document.querySelector("#recommendations-panel-2").innerHTML += "<p class='warning'>" + meta_title_long_text_start + " : " + meta_title_long.length + " " + meta_title_long_text_end + ".</p>";
     }
 }
 
 function display_h1_error(results) {
     h1_error = results;
-    document.querySelector("#recommendations-panel").innerHTML = "<p class='warning'>" + h1_error + "</p>";
+    if (h1_error[0].length > 1) {
+        h1_error_text = chrome.i18n.getMessage("h1Error");
+    } else {
+        h1_error_text = '';
+    }
+    document.querySelector("#recommendations-panel").innerHTML = "<p class='warning'>" + h1_error_text + "</p>";
 }
 
 function display_meta_description(results) {
     meta_description = results;
-    document.querySelector("#meta-description").innerHTML = "<p class='info'><span class='info-heading'>Мета описание: </span>" + meta_description + "</p>";
+    meta_description_text = chrome.i18n.getMessage("metaDescription");
+    document.querySelector("#meta-description").innerHTML = "<p class='info'><span class='info-heading'>" + meta_description_text + ": </span>" + meta_description + "</p>";
 }
 
 function current_url(results) {
@@ -107,7 +120,7 @@ chrome.tabs.query({active: true}, function (tabs) {
     }, display_netpeak_cloud);
 
     chrome.tabs.executeScript(tab.id, {
-        code: "if(document.querySelectorAll('h1').length>1) { 'Внимание! Повече от един H1 елемента на страницата!' } "
+        code: "if(document.querySelectorAll('h1').length>1) { 'Warrning! More than H1 tags on page!' } "
     }, display_h1_error);
 
     chrome.tabs.executeScript(tab.id, {

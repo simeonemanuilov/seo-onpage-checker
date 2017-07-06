@@ -9,30 +9,30 @@
 </head>
 <body>
 <img src="images/icon48.png" id="logo"/>
-<button id="refresh">Рефреш</button>
-<div id="extension-heading">SEO OnPage checker</div>
+<button id="refresh" data-message="refresh">Refresh</button>
+<div id="extension-heading" data-message="name">SEO OnPage checker</div>
 
 <div class="left">
-    <div id="meta-title">elements</div>
-    <div id="meta-description">elements</div>
-    <div id="h1">elements</div>
-    <div id="index-noindex">elements</div>
+    <div id="meta-title">waiting...</div>
+    <div id="meta-description">waiting...</div>
+    <div id="h1">waiting...</div>
+    <div id="index-noindex">waiting...</div>
     <fieldset>
-        <legend>Външни инструменти</legend>
+        <legend data-message="externalTools">External Tools</legend>
         <div class="text-icon"><a class="with-icon" id="page-speed">
             <div class="image-button"><img src="images/page-speed-insight.png"
-                                           alt="Page Speed Insight проверка за скорост"
-                                           title="Провери скоростта с Page Speed Insight"/></div>
+                                           alt="Page Speed Insight Test"
+                                           title="Page Speed Insight Test"/></div>
             <div class="image-text">Page Speed</div>
         </a></div>
         <div class="text-icon"><a class="with-icon" id="serpstat">
-            <div class="image-button"><img src="images/serpstat.png" alt="SerpStat проверка"
-                                           title="Провери класирането със SerpStat"/></div>
+            <div class="image-button"><img src="images/serpstat.png" alt="SerpStat Check URL"
+                                           title="Check URL with SerpStat"/></div>
             <div class="image-text">SerpStat</div>
         </a></div>
         <div class="text-icon"><a class="with-icon" id="mobile-friendly">
             <div class="image-button"><img src="images/mobile-friendly.png" alt="Mobile Friendly"
-                                           title="Mobile Friendly тест"/></div>
+                                           title="Mobile Friendly test"/></div>
             <div class="image-text">Mob. Friendly</div>
         </a></div>
         <div class="text-icon"><a class="with-icon" id="w3-validator">
@@ -43,41 +43,39 @@
     </fieldset>
 
     <fieldset id="netpeak-cloud-panel">
-        <legend>Netpeak Cloud</legend>
-        <div id="netpeak-cloud">elements</div>
+        <legend data-message="netpeakCloud">Netpeak Cloud</legend>
+        <div id="netpeak-cloud">waiting...</div>
     </fieldset>
 </div>
 
 <div class="right">
-    <button id="headings">Структура на заглавията</button>
-    <button id="robots">Покажи Robots.txt</button>
-    <button id="images">Alt и Title на изображения</button>
-    <button id="prev-next">Prev/Next</button>
-    <button id="hreflang">Hreflang</button>
-    <button id="all-html">Изходящи връзки</button>
-    <a class="link-button" id="structured-data">Микроформати</a>
+    <button id="headings" data-message="headingsStructure">H1-H6 Structure</button>
+    <button id="robots" data-message="showRobots">Show robots.txt</button>
+    <button id="images" data-message="altTitleImages">Alt and Title for images</button>
+    <button id="prev-next" data-message="prevNext">Prev/Next</button>
+    <button id="hreflang" data-message="hreflang">Hreflang</button>
+    <button id="all-html" data-message="externalLinks">External Links</button>
+    <a class="link-button" id="structured-data" data-message="structuredData">Structured Data</a>
 </div>
 <hr/>
 <div class="row">
-    <div id="recommendations">Основни препоръки</div>
+    <div id="recommendations" data-message="mainRecommendations">Recommendations</div>
     <div id="recommendations-panel"></div>
     <div id="recommendations-panel-2"></div>
 </div>
 <hr/>
 <div class="row">
-    <div id="headers">HTTP хедъри</div>
-    <div id="ad-section-heading">Информация</div>
-    <div id="headers-panel">HTTP хедъри панел</div>
+    <div id="headers" data-message="httpHeaders">HTTP headers</div>
+    <div id="ad-section-heading" data-message="information">Information</div>
+    <div id="headers-panel" data-message="httpHeadersPanel">HTTP headers panel</div>
     <div id="ad-section">
         <fieldset class="full-width-and-height">
-            <legend>За приложението</legend>
-            <p>
+            <legend data-message="about">About</legend>
+            <p data-message="aboutText">
                 Този extension може да Ви помогне, за да откриете съвсем малка част от възможните грешки на конкретната
                 страница.
-
-            <p>
+            <p data-message="aboutAdText">
                 За пълен SEO одит - свържете се с Netpeak.
-            </p>
             </p>
         </fieldset>
 
