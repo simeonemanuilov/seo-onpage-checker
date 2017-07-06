@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEO checker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="background.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<img src="images/icon48.png" id="logo"/>
+<button id="refresh">Рефреш</button>
+<div id="extension-heading">SEO OnPage checker</div>
+
+<div class="left">
+    <div id="meta-title">elements</div>
+    <div id="meta-description">elements</div>
+    <div id="h1">elements</div>
+    <div id="index-noindex">elements</div>
+    <fieldset>
+        <legend>Външни инструменти</legend>
+        <div class="text-icon"><a class="with-icon" id="page-speed">
+            <div class="image-button"><img src="images/page-speed-insight.png"
+                                           alt="Page Speed Insight проверка за скорост"
+                                           title="Провери скоростта с Page Speed Insight"/></div>
+            <div class="image-text">Page Speed</div>
+        </a></div>
+        <div class="text-icon"><a class="with-icon" id="serpstat">
+            <div class="image-button"><img src="images/serpstat.png" alt="SerpStat проверка"
+                                           title="Провери класирането със SerpStat"/></div>
+            <div class="image-text">SerpStat</div>
+        </a></div>
+        <div class="text-icon"><a class="with-icon" id="mobile-friendly">
+            <div class="image-button"><img src="images/mobile-friendly.png" alt="Mobile Friendly"
+                                           title="Mobile Friendly тест"/></div>
+            <div class="image-text">Mob. Friendly</div>
+        </a></div>
+        <div class="text-icon"><a class="with-icon" id="w3-validator">
+            <div class="image-button"><img src="images/w3-validator.png" alt="Mobile Friendly" title="W3 Validator"/>
+            </div>
+            <div class="image-text">W3 Validator</div>
+        </a></div>
+    </fieldset>
+
+    <fieldset id="netpeak-cloud-panel">
+        <legend>Netpeak Cloud</legend>
+        <div id="netpeak-cloud">elements</div>
+    </fieldset>
+</div>
+
+<div class="right">
+    <button id="headings">Структура на заглавията</button>
+    <button id="robots">Покажи Robots.txt</button>
+    <button id="images">Alt и Title на изображения</button>
+    <button id="prev-next">Prev/Next</button>
+    <button id="hreflang">Hreflang</button>
+    <button id="all-html">Изходящи връзки</button>
+    <a class="link-button" id="structured-data">Микроформати</a>
+</div>
+<hr/>
+<div class="row">
+    <div id="recommendations">Основни препоръки</div>
+    <div id="recommendations-panel"></div>
+    <div id="recommendations-panel-2"></div>
+</div>
+<hr/>
+<div class="row">
+    <div id="headers">HTTP хедъри</div>
+    <div id="ad-section-heading">Информация</div>
+    <div id="headers-panel">HTTP хедъри панел</div>
+    <div id="ad-section">
+        <fieldset class="full-width-and-height">
+            <legend>За приложението</legend>
+            <p>
+                Този extension може да Ви помогне, за да откриете съвсем малка част от възможните грешки на конкретната
+                страница.
+
+            <p>
+                За пълен SEO одит - свържете се с Netpeak.
+            </p>
+            </p>
+        </fieldset>
+
+    </div>
+</div>
+</body>
+</html>

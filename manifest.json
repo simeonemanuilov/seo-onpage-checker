@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "SEO OnPage Checker",
+    "version": "1.0",
+    "description": "SEO OnPage checker",
+    "icons":{
+        "16": "images/icon16.png",
+        "128": "images/icon128.png",
+        "48": "images/icon48.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "contextMenus",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "browser_action": {
+        "default_icon" : "images/icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
