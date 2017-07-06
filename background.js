@@ -32,7 +32,7 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
             "top": 5,
             "left": 5,
             "width": screen.availWidth,
-            "height": screen.availHeight/1.5
+            "height": screen.availHeight/2
         };
         chrome.windows.create(createData, function(){});
     }

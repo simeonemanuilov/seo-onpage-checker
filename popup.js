@@ -17,11 +17,11 @@ function display_netpeak_cloud(results) {
 
 function http_headers(results) {
     http_headers = results;
-    table ="<table class='headers-table'>";
-    for (var i = 0, len = http_headers[0].length; i < len; i++){
-        table +="<tr><td>"+http_headers[0][i]+"</td></tr>";
+    table = "<table class='headers-table'>";
+    for (var i = 0, len = http_headers[0].length; i < len; i++) {
+        table += "<tr><td>" + http_headers[0][i] + "</td></tr>";
     }
-    table +="</table>";
+    table += "</table>";
     document.querySelector("#headers-panel").innerHTML = "<p class='info'><span class='info-heading'></span>" + table + "</p>";
 }
 
@@ -42,8 +42,8 @@ function display_index_noindex(results) {
 
 function display_long_meta_error(results) {
     meta_title_long = results;
-    if(meta_title_long.length>10){
-        document.querySelector("#recommendations-panel-2").innerHTML += "<p class='warning'>"+"Внимание! Прекалено дълъг Meta Title. Текуща дължина: " + meta_title_long.length +" символа.</p>";
+    if (meta_title_long.length > 10) {
+        document.querySelector("#recommendations-panel-2").innerHTML += "<p class='warning'>" + "Внимание! Прекалено дълъг Meta Title. Текуща дължина: " + meta_title_long.length + " символа.</p>";
     }
 }
 
@@ -59,20 +59,20 @@ function display_meta_description(results) {
 
 function current_url(results) {
     current_url = results;
-    current_url_encoded=encodeURIComponent(current_url);
-    document.querySelector("#structured-data").href = "https://developers.google.com/structured-data/testing-tool/?url="+current_url_encoded;
+    current_url_encoded = encodeURIComponent(current_url);
+    document.querySelector("#structured-data").href = "https://developers.google.com/structured-data/testing-tool/?url=" + current_url_encoded;
     document.querySelector("#structured-data").setAttribute('target', '_blank');
 
-    document.querySelector("#page-speed").href = "https://developers.google.com/speed/pagespeed/insights/?hl=bg&url="+current_url_encoded;
+    document.querySelector("#page-speed").href = "https://developers.google.com/speed/pagespeed/insights/?hl=bg&url=" + current_url_encoded;
     document.querySelector("#page-speed").setAttribute('target', '_blank');
 
-    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query="+current_url_encoded+"&ff=1&search_type=subdomains&se=g_bg";
+    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query=" + current_url_encoded + "&ff=1&search_type=subdomains&se=g_bg";
     document.querySelector("#serpstat").setAttribute('target', '_blank');
 
-    document.querySelector("#mobile-friendly").href = "https://search.google.com/test/mobile-friendly?url="+current_url_encoded;
+    document.querySelector("#mobile-friendly").href = "https://search.google.com/test/mobile-friendly?url=" + current_url_encoded;
     document.querySelector("#mobile-friendly").setAttribute('target', '_blank');
 
-    document.querySelector("#w3-validator").href = "https://validator.w3.org/nu/?doc="+current_url_encoded;
+    document.querySelector("#w3-validator").href = "https://validator.w3.org/nu/?doc=" + current_url_encoded;
     document.querySelector("#w3-validator").setAttribute('target', '_blank');
 
 }
