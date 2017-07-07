@@ -1,3 +1,8 @@
+//Function for cyrillic URL addresses and encoding
+function fixedEncodeURI (str) {
+    return encodeURI(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
+}
+
 //Set Google Analytics tracking
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-74097617-16']);
@@ -9,6 +14,8 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
+
+//Function which translate popup in different languages
 function translateHTML () {
     var objects = document.getElementsByTagName('*'), i;
     for(i = 0; i < objects.length; i++) {
@@ -18,6 +25,7 @@ function translateHTML () {
     }
 }
 
+//Serpstat Context menu
 serpstat_icon_text = chrome.i18n.getMessage("serpstatContextMenu");
 var menuItem = {
     "id": "serpstat",
@@ -25,13 +33,10 @@ var menuItem = {
     "contexts": ["selection"]
 };
 
+//Clear current context menus if any
 chrome.contextMenus.remove('serpstat', function() {
     chrome.contextMenus.create(menuItem);
 });
-
-function fixedEncodeURI (str) {
-    return encodeURI(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
-}
 
 chrome.contextMenus.onClicked.addListener(function(clickData){
     if (clickData.menuItemId == "serpstat" && clickData.selectionText){
@@ -58,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var hreflang = document.getElementById('hreflang');
     var all_html = document.getElementById('all-html');
 
+    //Transalete all the HTML in extension popup
     translateHTML();
 
     headings.addEventListener('click', function () {
