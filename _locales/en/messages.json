@@ -121,5 +121,13 @@
 
     "serpstatContextMenu": {
         "message": "Serpstat check word +"
+    },
+
+    "serpstatLocale": {
+        "message": "se=g_bg"
+    },
+
+    "pageSpeedLocale": {
+        "message": "hl=en"
     }
 }

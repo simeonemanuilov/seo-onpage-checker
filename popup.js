@@ -73,23 +73,30 @@ function display_meta_description(results) {
 function current_url(results) {
     current_url = results;
     current_url_encoded = encodeURIComponent(current_url);
+    serpstat_locale_text = chrome.i18n.getMessage("serpstatLocale");
+    page_speed_locale_text = chrome.i18n.getMessage("pageSpeedLocale");
+
+    //Add href to extnernal Structured data tool
     document.querySelector("#structured-data").href = "https://developers.google.com/structured-data/testing-tool/?url=" + current_url_encoded;
     document.querySelector("#structured-data").setAttribute('target', '_blank');
 
-    document.querySelector("#page-speed").href = "https://developers.google.com/speed/pagespeed/insights/?hl=bg&url=" + current_url_encoded;
+    //Add href to extnernal Page Speed tool
+    document.querySelector("#page-speed").href = "https://developers.google.com/speed/pagespeed/insights/?" + page_speed_locale_text + "&url=" + current_url_encoded;
     document.querySelector("#page-speed").setAttribute('target', '_blank');
 
-    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query=" + current_url_encoded + "&ff=1&search_type=subdomains&se=g_bg";
+    //Add href to extnernal Serpstat tool
+    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query=" + current_url_encoded + "&ff=1&search_type=subdomains&" + serpstat_locale_text;
     document.querySelector("#serpstat").setAttribute('target', '_blank');
 
+    //Add href to extnernal Mobile Friendly tool
     document.querySelector("#mobile-friendly").href = "https://search.google.com/test/mobile-friendly?url=" + current_url_encoded;
     document.querySelector("#mobile-friendly").setAttribute('target', '_blank');
 
+    //Add href to extnernal W3 Validator Tool
     document.querySelector("#w3-validator").href = "https://validator.w3.org/nu/?doc=" + current_url_encoded;
     document.querySelector("#w3-validator").setAttribute('target', '_blank');
 
 }
-
 
 chrome.tabs.query({active: true}, function (tabs) {
     var tab = tabs[0];
@@ -108,15 +115,15 @@ chrome.tabs.query({active: true}, function (tabs) {
     }, display_h1);
 
     chrome.tabs.executeScript(tab.id, {
-        code: 'var metas = document.getElementsByTagName("meta"); var meta_description=""; for (var i=0; i<metas.length; i++) { if (metas[i].getAttribute("name") == "description") { meta_description = metas[i].getAttribute("content"); } } meta_description;'
+        file: 'functions/display_meta_description.js'
     }, display_meta_description);
 
     chrome.tabs.executeScript(tab.id, {
-        code: 'var url = document.location; var links = document.getElementsByTagName("meta"); var found = "none"; for (var i = 0, l; l = links[i]; i++) { if (l.getAttribute("name") == "robots") { found = l.getAttribute("content"); break; } } found;'
+        file: 'functions/display_index_noindex.js'
     }, display_index_noindex);
 
     chrome.tabs.executeScript(tab.id, {
-        code: "var cloud = document.querySelector(\"script[src*='netpeak.cloud/js/init']\").src; var cloud_id = cloud.match(/\\d+/)[0]; cloud_id;"
+        file: 'functions/display_netpeak_cloud.js'
     }, display_netpeak_cloud);
 
     chrome.tabs.executeScript(tab.id, {
@@ -128,10 +135,9 @@ chrome.tabs.query({active: true}, function (tabs) {
     }, robots_links);
 
     chrome.tabs.executeScript(tab.id, {
-        code: "var req = new XMLHttpRequest(); req.open('GET', document.location, false); req.send(null); var headers = req.getAllResponseHeaders(); headers.split(\"\\n\")"
+        file: 'functions/http_headers.js'
     }, http_headers);
 
     display_long_meta_error(tab_title);
-
 });
 
