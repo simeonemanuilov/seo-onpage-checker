@@ -1,0 +1,110 @@
+{
+    "name": {
+        "message": "SEO Checkerrr"
+    },
+    "description": {
+        "message": "The best SEO Checker"
+    },
+    "shortDescription": {
+        "message": "The best SEO Checker"
+    },
+    "metaTitle": {
+        "message": "Meta title"
+    },
+    "metaDescription": {
+        "message": "Meta description"
+    },
+    "canonical": {
+        "message": "Canonical"
+    },
+    "h1Text": {
+        "message": "H1 Element"
+    },
+    "netpeakCloudIdText": {
+        "message": "ID"
+    },
+    "indexNoindex": {
+        "message": "Meta index/noindex"
+    },
+    "metaTitleErrorStart": {
+        "message": "Warrning! Too long meta title. Current it is"
+    },
+    "h1Error": {
+        "message": "Warrning! There are more than one H1 tags on that page!"
+    },
+    "missingH1": {
+        "message": "Warrning! Missing H1 element on that page!"
+    }
+    "metaTitleErrorEnd": {
+        "message": "symbols!"
+    },
+    "refresh": {
+        "message": "Refresh +"
+    },
+    "back": {
+        "message": "Back +"
+    },
+    "externalTools": {
+        "message": "External Tools +"
+    },
+    "netpeakCloud": {
+        "message": "Netpeak Cloud +"
+    },
+    "headingsStructure": {
+        "message": "H1-H6 Structure +"
+    },
+    "showRobots": {
+        "message": "Show robots.txt +"
+    },
+    "altTitleImages": {
+        "message": "Alt and Title for images +"
+    },
+    "prevNext": {
+        "message": "Prev/Next +"
+    },
+    "hreflang": {
+        "message": "Hreflang +"
+    },
+    "externalLinks": {
+        "message": "External Links +"
+    },
+    "structuredData": {
+        "message": "Structured Data +"
+    },
+    "mainRecommendations": {
+        "message": "Recommendations +"
+    },
+    "httpHeaders": {
+        "message": "HTTP headers +"
+    },
+    "information": {
+        "message": "Information +"
+    },
+    "httpHeadersPanel": {
+        "message": "HTTP headers panel +"
+    },
+    "about": {
+        "message": "About +"
+    },
+    "waiting": {
+        "message": "Waiting... +"
+    },
+    "aboutText": {
+        "message": "This extension will help you to find onPage errors. +"
+    },
+    "aboutAdText": {
+        "message": "Visit Netpeak for proffesional service +"
+    },
+    "serpstatContextMenu": {
+        "message": "Serpstat check word in"
+    },
+    "serpstatLocale": {
+        "message": "se=g_bg"
+    },
+    "serpstatDefaultGoogle": {
+        "message": "Google (BG)"
+    },
+    "pageSpeedLocale": {
+        "message": "hl=en"
+    }
+}
