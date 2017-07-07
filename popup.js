@@ -11,6 +11,10 @@ function display_h1(results) {
     h1 = results;
     h1_text = chrome.i18n.getMessage("h1Text");
     document.querySelector("#h1").innerHTML = "<p class='info'><span class='info-heading'>" + h1_text + ": </span>" + h1 + "</p>";
+
+    if (h1[0] == "none") {
+        document.querySelector("#recommendations-panel-3").innerHTML += "<p class='warning'>Nqma h1</p>";
+    }
 }
 
 function display_netpeak_cloud(results) {
@@ -56,12 +60,14 @@ function display_long_meta_error(results) {
 
 function display_h1_error(results) {
     h1_error = results;
-    if (h1_error[0].length > 1) {
-        h1_error_text = chrome.i18n.getMessage("h1Error");
-    } else {
-        h1_error_text = '';
+    if (h1_error[0] != null) {
+        if (h1_error[0].length > 1) {
+            h1_error_text = chrome.i18n.getMessage("h1Error");
+        } else {
+            h1_error_text = '';
+        }
+        document.querySelector("#recommendations-panel").innerHTML = "<p class='warning'>" + h1_error_text + "</p>";
     }
-    document.querySelector("#recommendations-panel").innerHTML = "<p class='warning'>" + h1_error_text + "</p>";
 }
 
 function display_meta_description(results) {
@@ -111,7 +117,7 @@ chrome.tabs.query({active: true}, function (tabs) {
     }, display_canonical);
 
     chrome.tabs.executeScript(tab.id, {
-        code: 'document.querySelector("h1").textContent'
+        code: 'var h1 = document.querySelector("h1"); if (h1!=null) { h1.textContent; } else { "none" }'
     }, display_h1);
 
     chrome.tabs.executeScript(tab.id, {
