@@ -121,5 +121,9 @@
 
     "serpstatContextMenu": {
         "message": "Serpstat check word +"
+    },
+
+    "missingH1": {
+        "message": "Внимание! Липсва H1 елемент на тази страница."
     }
 }

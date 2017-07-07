@@ -12,8 +12,12 @@ function display_h1(results) {
     h1_text = chrome.i18n.getMessage("h1Text");
     document.querySelector("#h1").innerHTML = "<p class='info'><span class='info-heading'>" + h1_text + ": </span>" + h1 + "</p>";
 
+    missing_h1_text = chrome.i18n.getMessage("missingH1");
     if (h1[0] == "none") {
-        document.querySelector("#recommendations-panel-3").innerHTML += "<p class='warning'>Nqma h1</p>";
+        document.querySelector("#recommendations-panel-3").innerHTML += "<p class='warning'>" + missing_h1_text + "</p>";
+    }
+    if (h1[0].indexOf("none") !== -1) {
+        document.querySelector("#h1").className += "none-h1";
     }
 }
 

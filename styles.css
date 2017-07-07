@@ -50,10 +50,10 @@ span.info-heading {
     font-weight: 800;
     text-decoration: underline;
 }
-.noindex {
+.noindex, .none-h1 {
     color:red;
 }
-.noindex span {
+.noindex span, .none-h1 span {
     color:white;
 }
 #logo {
