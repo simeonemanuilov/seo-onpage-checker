@@ -120,11 +120,15 @@
     },
 
     "serpstatContextMenu": {
-        "message": "Serpstat check word +"
+        "message": "Serpstat check word in"
     },
 
     "serpstatLocale": {
         "message": "se=g_bg"
+    },
+
+    "serpstatDefaultGoogle": {
+        "message": "Google (BG)"
     },
 
     "pageSpeedLocale": {

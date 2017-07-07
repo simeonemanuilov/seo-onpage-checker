@@ -27,9 +27,11 @@ function translateHTML () {
 
 //Serpstat Context menu
 serpstat_icon_text = chrome.i18n.getMessage("serpstatContextMenu");
+serpstat_default_google = chrome.i18n.getMessage("serpstatDefaultGoogle");
+serpstat_locale_text = chrome.i18n.getMessage("serpstatLocale");
 var menuItem = {
     "id": "serpstat",
-    "title": serpstat_icon_text,
+    "title": serpstat_icon_text + " " + serpstat_default_google,
     "contexts": ["selection"]
 };
 
@@ -40,7 +42,7 @@ chrome.contextMenus.remove('serpstat', function() {
 
 chrome.contextMenus.onClicked.addListener(function(clickData){
     if (clickData.menuItemId == "serpstat" && clickData.selectionText){
-        var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&query=" + fixedEncodeURI(clickData.selectionText) +"&se=g_bg";
+        var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&query=" + fixedEncodeURI(clickData.selectionText) + "&" + serpstat_locale_text;
         var createData = {
             "url": serpstatUrl,
             "type": "popup",
