@@ -1,24 +1,12 @@
 //Function for cyrillic URL addresses and encoding
-function fixedEncodeURI (str) {
+function fixedEncodeURI(str) {
     return encodeURI(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
 }
 
-//Set Google Analytics tracking
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-74097617-16']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
 //Function which translate popup in different languages
-function translateHTML () {
+function translateHTML() {
     var objects = document.getElementsByTagName('*'), i;
-    for(i = 0; i < objects.length; i++) {
+    for (i = 0; i < objects.length; i++) {
         if (objects[i].dataset && objects[i].dataset.message) {
             objects[i].innerHTML = chrome.i18n.getMessage(objects[i].dataset.message);
         }
@@ -36,12 +24,12 @@ var menuItem = {
 };
 
 //Clear current context menus if any
-chrome.contextMenus.remove('serpstat', function() {
+chrome.contextMenus.remove('serpstat', function () {
     chrome.contextMenus.create(menuItem);
 });
 
-chrome.contextMenus.onClicked.addListener(function(clickData){
-    if (clickData.menuItemId == "serpstat" && clickData.selectionText){
+chrome.contextMenus.onClicked.addListener(function (clickData) {
+    if (clickData.menuItemId == "serpstat" && clickData.selectionText) {
         var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&query=" + fixedEncodeURI(clickData.selectionText) + "&" + serpstat_locale_text;
         var createData = {
             "url": serpstatUrl,
@@ -49,9 +37,10 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
             "top": 5,
             "left": 5,
             "width": screen.availWidth,
-            "height": screen.availHeight/2
+            "height": screen.availHeight / 2
         };
-        chrome.windows.create(createData, function(){});
+        chrome.windows.create(createData, function () {
+        });
     }
 });
 
@@ -103,9 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
     hreflang.addEventListener('click', function () {
         chrome.tabs.executeScript({
             file: 'functions/display_hreflang.js'
-
-            //code:'var links=document.getElementsByTagName("link"); var href="none"; var hreflang="none"; var s=""; for(var i=0;i<links.length;i++){ if(links[i].getAttribute("rel")=="alternate"){href=links[i].getAttribute("href"); hreflang=links[i].getAttribute("hreflang"); if(href!=null&&hreflang!=null) { s = s + "href: "+href+"\\r\\n"+"hreflang: "+hreflang+"\\r\\n-------------------------------------\\r\\n"}}} if(s=="") {s="Няма намерен hreflang"} alert(s);'
-
         });
     });
 
@@ -115,5 +101,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         all_html.innerText = chrome.i18n.getMessage("waiting");
     });
-
 });

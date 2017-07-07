@@ -149,5 +149,20 @@ chrome.tabs.query({active: true}, function (tabs) {
     }, http_headers);
 
     display_long_meta_error(tab_title);
+
 });
+
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-74097617-16']);
+_gaq.push(['_trackEvent', 'url', 'unknown']);
+
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = false;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
 
