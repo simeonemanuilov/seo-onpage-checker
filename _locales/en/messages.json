@@ -39,61 +39,61 @@
     "message": "symbols!"
   },
   "refresh": {
-    "message": "Refresh +"
+    "message": "Refresh"
   },
   "back": {
-    "message": "Back +"
+    "message": "Back"
   },
   "externalTools": {
-    "message": "External Tools +"
+    "message": "External Tools"
   },
   "netpeakCloud": {
-    "message": "Netpeak Cloud +"
+    "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "H1-H6 Structure +"
+    "message": "H1-H6 Structure"
   },
   "showRobots": {
-    "message": "Show robots.txt +"
+    "message": "Show robots.txt"
   },
   "altTitleImages": {
-    "message": "Alt and Title for images +"
+    "message": "Alt and Title for images"
   },
   "prevNext": {
-    "message": "Prev/Next +"
+    "message": "Prev/Next"
   },
   "hreflang": {
-    "message": "Hreflang +"
+    "message": "Hreflang"
   },
   "externalLinks": {
-    "message": "External Links +"
+    "message": "External Links"
   },
   "structuredData": {
-    "message": "Structured Data +"
+    "message": "Structured Data"
   },
   "mainRecommendations": {
-    "message": "Recommendations +"
+    "message": "Recommendations"
   },
   "httpHeaders": {
-    "message": "HTTP headers +"
+    "message": "HTTP headers"
   },
   "information": {
-    "message": "Information +"
+    "message": "Information"
   },
   "httpHeadersPanel": {
-    "message": "HTTP headers panel +"
+    "message": "HTTP headers panel"
   },
   "about": {
-    "message": "About +"
+    "message": "About"
   },
   "waiting": {
-    "message": "Waiting... +"
+    "message": "Waiting..."
   },
   "aboutText": {
-    "message": "This extension will help you to find onPage errors. +"
+    "message": "This extension will help you to find onPage errors."
   },
   "aboutAdText": {
-    "message": "Visit Netpeak for proffesional service +"
+    "message": "Visit Netpeak for proffesional service."
   },
   "serpstatContextMenu": {
     "message": "Serpstat check word in"
