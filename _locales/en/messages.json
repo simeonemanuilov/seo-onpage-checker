@@ -2,11 +2,11 @@
   "name": {
       "message": "Netpeak SEO OnPage Checker"
   },
-  "description": {
-    "message": "The best SEO Checker"
-  },
+    "description": {
+        "message": "OnPage SEO Checker"
+    },
   "shortDescription": {
-    "message": "The best SEO Checker"
+    "message": "OnPage SEO Checker"
   },
   "metaTitle": {
     "message": "Meta title"
