@@ -1,6 +1,6 @@
 {
   "name": {
-    "message": "SEO Checkerrr"
+    "message": "SEO Checker"
   },
   "description": {
     "message": "The best SEO Checker"
@@ -71,6 +71,9 @@
   "httpHeaders": {
     "message": "HTTP headers +"
   },
+    "headersData": {
+        "message": "Full HTTP Headers"
+    },
   "information": {
     "message": "Information +"
   },
@@ -90,6 +93,6 @@
     "message": "Visit Netpeak for proffesional service +"
   },
   "serpstatContextMenu": {
-    "message": "Serpstat check word +"
+    "message": "Serpstat check word"
   }
 }

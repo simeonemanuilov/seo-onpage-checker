@@ -63,12 +63,12 @@ span.info-heading {
 }
 .left {
     width: 75%;
-    height:240px;
+    height:250px;
     float: left;
 }
 .right {
     width: 25%;
-    height:240px;
+    height:250px;
     float: right;
 }
 .row {
@@ -78,7 +78,7 @@ fieldset {
     border-width: 1px;
     border-style: solid;
     border-color:white;
-    width:63%;
+    width:92%;
     height:63px;
     float:left;
     background: rgba(31, 55, 195, 0.21);
@@ -113,7 +113,7 @@ fieldset {
     float: left;
 }
 div.text-icon {
-    width: 25%;
+    width: 20%;
     float:left;
 }
 div.image-button {
@@ -129,7 +129,7 @@ div.image-text {
     text-decoration:none;
 }
 #netpeak-cloud-panel {
-    width: 25%;
+    width: 100%;
 }
 .full-width-and-height {
     width: 100%;

@@ -90,6 +90,10 @@ function current_url(results) {
     document.querySelector("#structured-data").href = "https://developers.google.com/structured-data/testing-tool/?url=" + current_url_encoded;
     document.querySelector("#structured-data").setAttribute('target', '_blank');
 
+    //Add href to extnernal Full HTTP Headers data
+    document.querySelector("#headers-data").href = "http://soft.galinov.com/?link=" + current_url_encoded;
+    document.querySelector("#headers-data").setAttribute('target', '_blank');
+
     //Add href to extnernal Page Speed tool
     document.querySelector("#page-speed").href = "https://developers.google.com/speed/pagespeed/insights/?" + page_speed_locale_text + "&url=" + current_url_encoded;
     document.querySelector("#page-speed").setAttribute('target', '_blank');
@@ -106,6 +110,9 @@ function current_url(results) {
     document.querySelector("#w3-validator").href = "https://validator.w3.org/nu/?doc=" + current_url_encoded;
     document.querySelector("#w3-validator").setAttribute('target', '_blank');
 
+    //Add href to extnernal Similar Web tool
+    document.querySelector("#similar-web").href = "https://www.similarweb.com/website/" + current_url;
+    document.querySelector("#similar-web").setAttribute('target', '_blank');
 }
 
 chrome.tabs.query({active: true}, function (tabs) {
