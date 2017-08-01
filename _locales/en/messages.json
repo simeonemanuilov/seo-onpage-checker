@@ -71,14 +71,14 @@
     "structuredData": {
         "message": "Structured Data"
     },
-    "headersData": {
-        "message": "Full HTTP Headers"
-    },
     "mainRecommendations": {
         "message": "Recommendations"
     },
     "httpHeaders": {
         "message": "HTTP headers"
+    },
+    "headersData": {
+        "message": "Full HTTP Headers"
     },
     "information": {
         "message": "Information"
@@ -96,7 +96,7 @@
         "message": "This extension will help you to find onPage errors."
     },
     "aboutAdText": {
-        "message": "Visit Netpeak for proffesional service."
+        "message": "Visit <a href='https://netpeak.bg/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> site for proffesional service."
     },
     "serpstatContextMenu": {
         "message": "Serpstat check word in"

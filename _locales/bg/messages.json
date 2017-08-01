@@ -24,73 +24,73 @@
     "message": "Meta index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Warrning! Too long meta title. Current it is"
+    "message": "Внивание! Прекалено дълъг meta title. Current it is"
   },
   "h1Error": {
-    "message": "Warrning! There are more than one H1 tags on that page!"
+    "message": "Внимание! Налични са повече от един H1 елемента на тази страница."
   },
   "metaTitleErrorEnd": {
     "message": "symbols"
   },
   "refresh": {
-    "message": "Refresh +"
+    "message": "Refresh"
   },
   "back": {
-    "message": "Back +"
+    "message": "Назад"
   },
   "externalTools": {
-    "message": "External Tools +"
+    "message": "Външни инструменти"
   },
   "netpeakCloud": {
-    "message": "Netpeak Cloud +"
+    "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "H1-H6 Structure +"
+    "message": "H1-H6 структура"
   },
   "showRobots": {
-    "message": "Show robots.txt +"
+    "message": "Покажи robots.txt"
   },
   "altTitleImages": {
-    "message": "Alt and Title for images +"
+    "message": "Alt и Title за изображения"
   },
   "prevNext": {
-    "message": "Prev/Next +"
+    "message": "Prev/Next"
   },
   "hreflang": {
-    "message": "Hreflang +"
+    "message": "Hreflang"
   },
   "externalLinks": {
-    "message": "External Links +"
+    "message": "Външни връзки"
   },
   "structuredData": {
-    "message": "Structured Data +"
+    "message": "Микроформати"
   },
   "mainRecommendations": {
-    "message": "Recommendations +"
+    "message": "Препоръки"
   },
   "httpHeaders": {
-    "message": "HTTP headers +"
+    "message": "HTTP хедъри"
   },
   "information": {
-    "message": "Information +"
+    "message": "Информация"
   },
   "httpHeadersPanel": {
-    "message": "HTTP headers panel +"
+    "message": "HTTP хедър панел"
   },
   "about": {
-    "message": "About +"
+    "message": "About"
   },
   "waiting": {
-    "message": "Waiting... +"
+    "message": "Зареждане... +"
   },
   "aboutText": {
-    "message": "This extension will help you to find onPage errors. +"
+    "message": "Това разширение ще Ви помогне да откриете лесно част от най-често срещаните OnPage грешки"
   },
   "aboutAdText": {
-    "message": "Visit Netpeak for proffesional service +"
+    "message": "Свържете се със специалисти за пълен SEO одит: <a href='https://netpeak.bg/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a>"
   },
   "serpstatContextMenu": {
-    "message": "Serpstat check word in"
+    "message": "Serpstat проверка на дума в"
   },
   "missingH1": {
     "message": "Внимание! Липсва H1 елемент на тази страница."
