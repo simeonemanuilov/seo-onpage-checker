@@ -42,9 +42,7 @@ button {
     width: initial;
 }
 #home {
-    position:fixed;
-    top:5px;
-    left:5px;
+    float: right;
 }
 span.info-heading {
     font-weight: 800;
