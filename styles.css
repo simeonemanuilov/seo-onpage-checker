@@ -55,9 +55,7 @@ span.info-heading {
     color:white;
 }
 #logo {
-    position:fixed;
-    top:5px;
-    right:5px;
+    float: right;
 }
 .left {
     width: 75%;
