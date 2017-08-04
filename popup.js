@@ -99,7 +99,7 @@ function current_url(results) {
     document.querySelector("#page-speed").setAttribute('target', '_blank');
 
     //Add href to extnernal Serpstat tool
-    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query=" + current_url_encoded + "&ff=1&search_type=subdomains&" + serpstat_locale_text;
+    document.querySelector("#serpstat").href = "https://serpstat.com/urls/index?query=" + current_url_encoded + "&ff=1&ref=81207&search_type=subdomains&" + serpstat_locale_text;
     document.querySelector("#serpstat").setAttribute('target', '_blank');
 
     //Add href to extnernal Mobile Friendly tool

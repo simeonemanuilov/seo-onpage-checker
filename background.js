@@ -30,7 +30,7 @@ chrome.contextMenus.remove('serpstat', function () {
 
 chrome.contextMenus.onClicked.addListener(function (clickData) {
     if (clickData.menuItemId == "serpstat" && clickData.selectionText) {
-        var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&query=" + fixedEncodeURI(clickData.selectionText) + "&" + serpstat_locale_text;
+        var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&ref=81207&query=" + fixedEncodeURI(clickData.selectionText) + "&" + serpstat_locale_text;
         var createData = {
             "url": serpstatUrl,
             "type": "popup",
