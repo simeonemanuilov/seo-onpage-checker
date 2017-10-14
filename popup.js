@@ -34,7 +34,7 @@ function http_headers(results) {
         table += "<tr><td>" + http_headers[0][i] + "</td></tr>";
     }
     table += "</table>";
-    document.querySelector("#headers-panel").innerHTML = "<p class='info'><span class='info-heading'></span>" + table + "</p>";
+    document.querySelector("#headers-panel").innerHTML = table;
 }
 
 function robots_links(results) {

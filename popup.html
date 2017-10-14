@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SEO checker</title>
+    <title>NetpeakSEO checker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script type="text/javascript" src="background.js"></script>
     <script type="text/javascript" src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<section class="header-section">
 <img src="images/icon48.png" id="logo"/>
 <button id="refresh" data-message="refresh">Refresh</button>
 <div id="extension-heading" data-message="name">SEO OnPage checker</div>
-
+</section>
+<section class="main-section">
 <div class="left">
     <div id="meta-title">waiting...</div>
     <div id="meta-description">waiting...</div>
@@ -47,7 +49,6 @@
         </a></div>
     </fieldset>
 </div>
-
 <div class="right">
     <button id="headings" data-message="headingsStructure">H1-H6 Structure</button>
     <button id="robots" data-message="showRobots">Show robots.txt</button>
@@ -58,6 +59,7 @@
     <a class="link-button" id="structured-data" data-message="structuredData">Structured Data</a>
     <a class="link-button" id="headers-data" data-message="headersData">Structured Data</a>
 </div>
+</section>
 <hr/>
 <div class="row">
     <div id="recommendations" data-message="mainRecommendations">Recommendations</div>

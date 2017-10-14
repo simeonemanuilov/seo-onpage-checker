@@ -24,7 +24,7 @@
     "message": "Meta index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Внивание! Прекалено дълъг meta title. Current it is"
+    "message": "Внивание! Прекалено дълъг meta title. Текущата дължина е: "
   },
   "h1Error": {
     "message": "Внимание! Налични са повече от един H1 елемента на тази страница."
@@ -81,7 +81,7 @@
     "message": "About"
   },
   "waiting": {
-    "message": "Зареждане... +"
+    "message": "Зареждане... "
   },
   "aboutText": {
     "message": "Това разширение ще Ви помогне да откриете лесно част от най-често срещаните OnPage грешки"

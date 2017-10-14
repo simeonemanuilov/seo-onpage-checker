@@ -57,7 +57,7 @@
         "message": "Show robots.txt"
     },
     "altTitleImages": {
-        "message": "Alt and Title for images"
+        "message": "Alt / Title"
     },
     "prevNext": {
         "message": "Prev/Next"
@@ -78,7 +78,7 @@
         "message": "HTTP headers"
     },
     "headersData": {
-        "message": "Full HTTP Headers"
+        "message": "HTTP Headers"
     },
     "information": {
         "message": "Information"
