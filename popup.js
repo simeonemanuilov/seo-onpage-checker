@@ -31,7 +31,11 @@ function http_headers(results) {
     http_headers = results;
     table = "<table class='headers-table'>";
     for (var i = 0, len = http_headers[0].length; i < len; i++) {
-        table += "<tr><td>" + http_headers[0][i] + "</td></tr>";
+        if (http_headers[0][i].includes("noindex")) {
+            table += "<tr style='color: #ff0000;'><td>" + http_headers[0][i] + "</td></tr>";
+        } else {
+            table += "<tr><td>" + http_headers[0][i] + "</td></tr>";
+        }
     }
     table += "</table>";
     document.querySelector("#headers-panel").innerHTML = table;
@@ -115,7 +119,7 @@ function current_url(results) {
     document.querySelector("#similar-web").setAttribute('target', '_blank');
 }
 
-chrome.tabs.query({active: true}, function (tabs) {
+chrome.tabs.query({active: true, windowId: chrome.windows.WINDOW_ID_CURRENT }, function (tabs) {
     var tab = tabs[0];
     tab_title = tab.title;
 
