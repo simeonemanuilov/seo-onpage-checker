@@ -102,10 +102,10 @@
         "message": "Serpstat check word in"
     },
     "serpstatLocale": {
-        "message": "se=g_bg"
+        "message": "se=g_us"
     },
     "serpstatDefaultGoogle": {
-        "message": "Google (BG)"
+        "message": "Google (.COM)"
     },
     "pageSpeedLocale": {
         "message": "hl=en"

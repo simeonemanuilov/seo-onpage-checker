@@ -99,10 +99,10 @@
         "message": "Serpstat check word in"
     },
     "serpstatLocale": {
-        "message": "se=g_bg"
+        "message": "se=g_uk"
     },
     "serpstatDefaultGoogle": {
-        "message": "Google (BG)"
+        "message": "Google (.CO.UK)"
     },
     "pageSpeedLocale": {
         "message": "hl=en"

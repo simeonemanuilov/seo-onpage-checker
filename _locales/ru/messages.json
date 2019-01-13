@@ -94,5 +94,11 @@
   },
   "serpstatContextMenu": {
     "message": "Serpstat check word"
+  },
+  "serpstatLocale": {
+    "message": "se=g_ru"
+  },
+  "serpstatDefaultGoogle": {
+    "message": "Google (.RU)"
   }
 }
