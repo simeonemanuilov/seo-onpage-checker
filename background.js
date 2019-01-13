@@ -31,16 +31,7 @@ chrome.contextMenus.remove('serpstat', function () {
 chrome.contextMenus.onClicked.addListener(function (clickData) {
     if (clickData.menuItemId == "serpstat" && clickData.selectionText) {
         var serpstatUrl = "https://serpstat.com/keywords/index/?search_type=keyword&ref=81207&query=" + fixedEncodeURI(clickData.selectionText) + "&" + serpstat_locale_text;
-        var createData = {
-            "url": serpstatUrl,
-            "type": "popup",
-            "top": 5,
-            "left": 5,
-            "width": screen.availWidth,
-            "height": screen.availHeight / 2
-        };
-        chrome.windows.create(createData, function () {
-        });
+        chrome.tabs.create({"url" : serpstatUrl });
     }
 });
 
