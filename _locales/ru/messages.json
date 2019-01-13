@@ -24,10 +24,10 @@
     "message": "Meta index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Warrning! Too long meta title. Current it is"
+    "message": "Warning! Too long meta title. Current it is"
   },
   "h1Error": {
-    "message": "Warrning! There are more than one H1 tags on that page!"
+    "message": "Warning! There are more than one H1 tags on that page!"
   },
   "metaTitleErrorEnd": {
     "message": "symbols"
@@ -87,10 +87,10 @@
     "message": "Waiting... +"
   },
   "aboutText": {
-    "message": "This extension will help you to find onPage errors. +"
+    "message": "The extension will help you find onPage errors. +"
   },
   "aboutAdText": {
-    "message": "Visit Netpeak for proffesional service +"
+    "message": "Visit Netpeak for profesional service +"
   },
   "serpstatContextMenu": {
     "message": "Serpstat check word"

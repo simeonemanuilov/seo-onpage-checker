@@ -27,13 +27,13 @@
         "message": "Meta index/noindex"
     },
     "metaTitleErrorStart": {
-        "message": "Warrning! Too long meta title. Current it is"
+        "message": "Warning! Too long meta title. Current it is"
     },
     "h1Error": {
-        "message": "Warrning! There are more than one H1 tags on that page!"
+        "message": "Warning! There are more than one H1 tags on that page!"
     },
     "missingH1": {
-        "message": "Warrning! Missing H1 element on that page!"
+        "message": "Warning! Missing H1 element on that page!"
     },
     "metaTitleErrorEnd": {
         "message": "symbols!"
@@ -93,10 +93,10 @@
         "message": "Waiting..."
     },
     "aboutText": {
-        "message": "This extension will help you to find onPage errors."
+        "message": "The extension will help you find onPage errors."
     },
     "aboutAdText": {
-        "message": "Visit <a href='https://netpeak.bg/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> site for proffesional service."
+        "message": "Visit <a href='https://netpeak.bg/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> site for professional service."
     },
     "serpstatContextMenu": {
         "message": "Serpstat check word in"
