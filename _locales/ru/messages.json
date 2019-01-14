@@ -3,7 +3,10 @@
     "message": "Netpeak Agency SEO Tool"
   },
   "description": {
-    "message": "The best SEO Checker"
+    "message": "SEO OnPage Checker"
+  },
+  "shortDescription": {
+    "message": "OnPage SEO Checker"
   },
   "metaTitle": {
     "message": "Meta title"
@@ -33,64 +36,64 @@
     "message": "symbols"
   },
   "refresh": {
-    "message": "Refresh +"
+    "message": "Refresh"
   },
   "back": {
-    "message": "Back +"
+    "message": "Back"
   },
   "externalTools": {
-    "message": "External Tools +"
+    "message": "External Tools"
   },
   "netpeakCloud": {
-    "message": "Netpeak Cloud +"
+    "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "H1-H6 Structure +"
+    "message": "H1-H6 Structure"
   },
   "showRobots": {
-    "message": "Show robots.txt +"
+    "message": "Show robots.txt"
   },
   "altTitleImages": {
-    "message": "Alt and Title for images +"
+    "message": "Alt and Title for images"
   },
   "prevNext": {
-    "message": "Prev/Next +"
+    "message": "Prev/Next"
   },
   "hreflang": {
-    "message": "Hreflang +"
+    "message": "Hreflang"
   },
   "externalLinks": {
-    "message": "External Links +"
+    "message": "External Links"
   },
   "structuredData": {
-    "message": "Structured Data +"
+    "message": "Structured Data"
   },
   "mainRecommendations": {
-    "message": "Recommendations +"
+    "message": "Recommendations"
   },
   "httpHeaders": {
-    "message": "HTTP headers +"
+    "message": "HTTP headers"
   },
-    "headersData": {
-        "message": "Full HTTP Headers"
-    },
+  "headersData": {
+    "message": "Full HTTP Headers"
+  },
   "information": {
-    "message": "Information +"
+    "message": "Information"
   },
   "httpHeadersPanel": {
-    "message": "HTTP headers panel +"
+    "message": "HTTP headers panel"
   },
   "about": {
-    "message": "About +"
+    "message": "About"
   },
   "waiting": {
-    "message": "Waiting... +"
+    "message": "Waiting..."
   },
   "aboutText": {
-    "message": "The extension will help you find onPage errors. +"
+    "message": "The extension will help you find onPage errors."
   },
   "aboutAdText": {
-    "message": "Visit Netpeak for profesional service +"
+    "message": "Visit <a href='https://netpeak.net/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> for profesional service."
   },
   "serpstatContextMenu": {
     "message": "Serpstat check word"
@@ -100,5 +103,8 @@
   },
   "serpstatDefaultGoogle": {
     "message": "Google (.RU)"
+  },
+  "pageSpeedLocale": {
+    "message": "hl=ru"
   }
 }

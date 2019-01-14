@@ -5,6 +5,9 @@
   "description": {
     "message": "OnPage SEO Tool"
   },
+  "shortDescription": {
+    "message": "OnPage SEO Checker"
+  },
   "metaTitle": {
     "message": "Meta title"
   },
@@ -15,7 +18,7 @@
     "message": "Canonical"
   },
   "h1Text": {
-    "message": "H1 Element"
+    "message": "H1 елемент"
   },
   "netpeakCloudIdText": {
     "message": "ID"
@@ -30,7 +33,7 @@
     "message": "Внимание! Налични са повече от един H1 елемента на тази страница."
   },
   "metaTitleErrorEnd": {
-    "message": "symbols"
+    "message": "символа"
   },
   "refresh": {
     "message": "Refresh"
@@ -78,13 +81,13 @@
     "message": "HTTP хедър панел"
   },
   "about": {
-    "message": "About"
+    "message": "За разширението"
   },
   "waiting": {
     "message": "Зареждане... "
   },
   "aboutText": {
-    "message": "Това разширение ще Ви помогне да откриете лесно част от най-често срещаните OnPage грешки"
+    "message": "Това разширение ще ви помогне да откриете лесно част от най-често срещаните SEO OnPage грешки."
   },
   "aboutAdText": {
     "message": "Свържете се със специалисти за пълен SEO одит: <a href='https://netpeak.bg/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a>"
@@ -94,5 +97,14 @@
   },
   "missingH1": {
     "message": "Внимание! Липсва H1 елемент на тази страница."
+  },
+  "serpstatLocale": {
+    "message": "se=g_bg"
+  },
+  "serpstatDefaultGoogle": {
+    "message": "Google (.BG)"
+  },
+  "pageSpeedLocale": {
+    "message": "hl=bg"
   }
 }
