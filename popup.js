@@ -110,9 +110,9 @@ function current_url(results) {
     document.querySelector("#mobile-friendly").href = "https://search.google.com/test/mobile-friendly?url=" + current_url_encoded;
     document.querySelector("#mobile-friendly").setAttribute('target', '_blank');
 
-    //Add href to extnernal W3 Validator Tool
-    document.querySelector("#w3-validator").href = "https://validator.w3.org/nu/?doc=" + current_url_encoded;
-    document.querySelector("#w3-validator").setAttribute('target', '_blank');
+    //Add href to extnernal Web Archive
+    document.querySelector("#web-archive").href = "https://web.archive.org/web/*/" + current_url;
+    document.querySelector("#web-archive").setAttribute('target', '_blank');
 
     //Add href to extnernal Similar Web tool
     document.querySelector("#similar-web").href = "https://www.similarweb.com/website/" + current_url;
