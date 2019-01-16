@@ -74,6 +74,9 @@
   "httpHeaders": {
     "message": "HTTP хедъри"
   },
+  "headersData": {
+    "message": "HTTP хедъри"
+  },
   "information": {
     "message": "Информация"
   },

@@ -98,6 +98,9 @@
   "serpstatContextMenu": {
     "message": "Serpstat check word"
   },
+  "missingH1": {
+    "message": "Warning! Missing H1 element on that page!"
+  },
   "serpstatLocale": {
     "message": "se=g_ru"
   },
