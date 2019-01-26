@@ -27,7 +27,7 @@
     "message": "Мета-тег index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Увага! Занадто довгий тег Title. Довжтина - "
+    "message": "Увага! Занадто довгий тег Title. Довжтина"
   },
   "h1Error": {
     "message": "Увага! На сторінці більше одного заголовка H1"
@@ -51,13 +51,13 @@
     "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "Структура заголовків H1-H6"
+    "message": "Структура H1-H6"
   },
   "showRobots": {
     "message": "Показати robots.txt"
   },
   "altTitleImages": {
-    "message": "Теги Alt і Title для зображень"
+    "message": "Теги Alt і Title"
   },
   "prevNext": {
     "message": "Prev/Next"

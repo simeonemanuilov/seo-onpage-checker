@@ -27,7 +27,7 @@
     "message": "Мета-тег index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Внимание! Слишком длинный тег Title. Текущая длина - "
+    "message": "Внимание! Слишком длинный тег Title. Текущая длина"
   },
   "h1Error": {
     "message": "Внимание! На странице более одного заголовка H1"
@@ -48,13 +48,13 @@
     "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "Структура заголовков H1-H6"
+    "message": "Структура H1-H6"
   },
   "showRobots": {
     "message": "Показать robots.txt"
   },
   "altTitleImages": {
-    "message": "Теги Alt и Title для изображений"
+    "message": "Теги Alt и Title"
   },
   "prevNext": {
     "message": "Prev/Next"

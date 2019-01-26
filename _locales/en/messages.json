@@ -27,7 +27,7 @@
     "message": "Meta index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Warning! Too long meta title. Current it is "
+    "message": "Warning! Too long meta title. Current it is"
   },
   "h1Error": {
     "message": "Warning! There are more than one H1 tags on that page!"
