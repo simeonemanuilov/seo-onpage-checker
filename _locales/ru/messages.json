@@ -3,58 +3,58 @@
     "message": "Netpeak Agency SEO Tool"
   },
   "description": {
-    "message": "SEO OnPage Checker"
+    "message": "Netpeak Agency SEO Tool"
   },
   "shortDescription": {
     "message": "OnPage SEO Checker"
   },
   "metaTitle": {
-    "message": "Meta title"
+    "message": "Тег title"
   },
   "metaDescription": {
-    "message": "Meta description"
+    "message": "Мета-тег description"
   },
   "canonical": {
     "message": "Canonical"
   },
   "h1Text": {
-    "message": "H1 Element"
+    "message": "Заголовок H1"
   },
   "netpeakCloudIdText": {
     "message": "ID"
   },
   "indexNoindex": {
-    "message": "Meta index/noindex"
+    "message": "Мета-тег index/noindex"
   },
   "metaTitleErrorStart": {
-    "message": "Warning! Too long meta title. Current it is"
+    "message": "Внимание! Слишком длинный тег Title. Текущая длина - "
   },
   "h1Error": {
-    "message": "Warning! There are more than one H1 tags on that page!"
+    "message": "Внимание! На странице более одного заголовка H1"
   },
   "metaTitleErrorEnd": {
-    "message": "symbols"
+    "message": "символы"
   },
   "refresh": {
-    "message": "Refresh"
+    "message": "Обновить"
   },
   "back": {
-    "message": "Back"
+    "message": "Назад"
   },
   "externalTools": {
-    "message": "External Tools"
+    "message": "Внешние инструменты"
   },
   "netpeakCloud": {
     "message": "Netpeak Cloud"
   },
   "headingsStructure": {
-    "message": "H1-H6 Structure"
+    "message": "Структура заголовков H1-H6"
   },
   "showRobots": {
-    "message": "Show robots.txt"
+    "message": "Показать robots.txt"
   },
   "altTitleImages": {
-    "message": "Alt and Title for images"
+    "message": "Теги Alt и Title для изображений"
   },
   "prevNext": {
     "message": "Prev/Next"
@@ -63,43 +63,43 @@
     "message": "Hreflang"
   },
   "externalLinks": {
-    "message": "External Links"
+    "message": "Внешние ссылки"
   },
   "structuredData": {
-    "message": "Structured Data"
+    "message": "Микроразметка"
   },
   "mainRecommendations": {
-    "message": "Recommendations"
+    "message": "Рекомендации"
   },
   "httpHeaders": {
-    "message": "HTTP headers"
+    "message": "HTTP заголовки"
   },
   "headersData": {
-    "message": "Full HTTP Headers"
+    "message": "HTTP Заголовки"
   },
   "information": {
-    "message": "Information"
+    "message": "Информация"
   },
   "httpHeadersPanel": {
-    "message": "HTTP headers panel"
+    "message": "Панель HTTP заголовков"
   },
   "about": {
-    "message": "About"
+    "message": "Про расширение"
   },
   "waiting": {
-    "message": "Waiting..."
+    "message": "Загрузка..."
   },
   "aboutText": {
-    "message": "The extension will help you find onPage errors."
+    "message": "Расширение поможет найти внутренние технические ошибки."
   },
   "aboutAdText": {
-    "message": "Visit <a href='https://netpeak.net/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> for profesional service."
+    "message": "Свяжитесь с <a href='https://netpeak.ru/?utm_source=chrome-seo-extension' target='_blank'>Netpeak</a> для профессиональных консультаций."
   },
   "serpstatContextMenu": {
-    "message": "Serpstat check word"
+    "message": "Проверка слова в Serpstat"
   },
   "missingH1": {
-    "message": "Warning! Missing H1 element on that page!"
+    "message": "Внимание! Заголовок H1 отсутсвует на странице"
   },
   "serpstatLocale": {
     "message": "se=g_ru"
